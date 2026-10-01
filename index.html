@@ -3,18 +3,20 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Periodic Table animation</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Interactive 3D periodic table with animated layouts - table, sphere, helix, and grid views">
+    <title>Interactive 3D Periodic Table</title>
     <link rel="stylesheet" href="style.css">
-
 </head>
 
 <body>
     <div class="controls">
         <div class="controls-group display br">
-            <button class="is-active toggle" id="table">table</button>
-            <button class="toggle" id="sphere">sphere</button>
-            <button class="toggle" id="helix">helix</button>
-            <button class="toggle" id="grid">grid</button>
+            <button class="is-active toggle" id="table" aria-label="Table layout">table</button>
+            <button class="toggle" id="sphere" aria-label="Sphere layout">sphere</button>
+            <button class="toggle" id="helix" aria-label="Helix layout">helix</button>
+            <button class="toggle" id="grid" aria-label="Grid layout">grid</button>
+            <button class="toggle" id="random" aria-label="Random layout">random</button>
         </div>
     </div>
     <div id="scene">
@@ -22,10 +24,13 @@
     </div>
     <div class="credits">
         3D transform calculations ported from this three.js <a
-            href="https://threejs.org/examples/css3d_periodictable.html" target="_blank">demo</a>.
+            href="https://threejs.org/examples/css3d_periodictable.html" target="_blank" rel="noopener noreferrer">demo</a>.
+        <br>
+        <span class="vishesh-footer">Made with ❤️ by <a href="https://www.instagram.com/mr____sandeep____0007/"
+                target="_blank" rel="noopener noreferrer">mr____sandeep____0007</a></span>
     </div>
     <template id="element">
-        <button class="element" data-color="0">
+        <button class="element" data-color="0" aria-label="Element">
             <div class="element-number"></div>
             <div class="element-symbol"></div>
             <div class="element-title"></div>
@@ -35,11 +40,5 @@
     <script type="module" src="./script.js"></script>
 
 </body>
-<div class="credits">
-    3D transform calculations ported from this three.js <a href="https://threejs.org/examples/css3d_periodictable.html"
-        target="_blank">demo</a>.<br>
-    <span class="vishesh-footer">Made with ❤️ by <a href="https://www.instagram.com/mr____sandeep____0007/"
-            target="_blank">mr____sandeep____0007</a></span>
-</div>
 
 </html>
